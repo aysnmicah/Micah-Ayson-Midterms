@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/style/style.css">
+    <title>File Upload</title>
+</head>
+<body>
+    <section class="et-hero-tabs">
+        <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="/">Home</a>
+            <a class="et-hero-tab" href="/blog">Blog</a>
+            <a class="et-hero-tab" href="/about">About</a>
+            <a class="et-hero-tab" href="/contact">Contact</a>
+            <a class="et-hero-tab" href="/file-upload/file-upload.html">File Upload</a>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <h1>File Upload</h1>
+        </div>
+        <div class="row">
+            <h4 style="text-align:center">Upload files here.</h4>
+        </div>
+        <form action="/uploads" enctype="multipart/form-data" method="POST">
+            <input class="btn-lrg choose-btn" type="file" name="myFile" required> <br>
+            <button class="btn-lrg submit-btn" type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
